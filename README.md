@@ -1,2 +1,3 @@
-# daily
-Curated data news
+# Daily
+
+Curated data engineering news
