@@ -25,6 +25,7 @@ if __name__ == "__main__":
 
         data = {
             "title": post_title[0].text,
+            "author": "Start Data Engineering",
             "url": post_title[0].absolute_links.pop(),
             "datetime": time_tag[0].attrs["datetime"],
             "summary": summary,
