@@ -18,10 +18,8 @@ if __name__ == "__main__":
         soup = BeautifulSoup(each.html, "html.parser")
         summary = get_text(soup.article)
         post_title = each.find(".post-title")
-        # print(post_title[0].text, post_title[0].absolute_links.pop())
         post_date = each.find(".post-date")
         time_tag = post_date[0].find("time")
-        # print(time_tag[0].attrs["datetime"])
 
         data = {
             "title": post_title[0].text,
@@ -31,6 +29,5 @@ if __name__ == "__main__":
             "summary": summary,
         }
         results.append(data)
-        # print("---")
 
     print(json.dumps(results))
