@@ -15,8 +15,6 @@
 		2E22BD5326E4C1E0003B29ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E22BD5126E4C1E0003B29ED /* LaunchScreen.storyboard */; };
 		2E22BD5E26E4C1E1003B29ED /* DailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22BD5D26E4C1E1003B29ED /* DailyTests.swift */; };
 		2E22BD6926E4C1E1003B29ED /* DailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22BD6826E4C1E1003B29ED /* DailyUITests.swift */; };
-		2E372217270B491D00C52AF9 /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E372216270B491D00C52AF9 /* Articles.json */; };
-		2E37221A270B4A7500C52AF9 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E372219270B4A7400C52AF9 /* ArticleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +49,6 @@
 		2E22BD6426E4C1E1003B29ED /* DailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E22BD6826E4C1E1003B29ED /* DailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyUITests.swift; sourceTree = "<group>"; };
 		2E22BD6A26E4C1E1003B29ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E372216270B491D00C52AF9 /* Articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Articles.json; sourceTree = "<group>"; };
-		2E372219270B4A7400C52AF9 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +102,6 @@
 				2E22BD4626E4C1DD003B29ED /* AppDelegate.swift */,
 				2E22BD4826E4C1DD003B29ED /* SceneDelegate.swift */,
 				2E22BD4A26E4C1DD003B29ED /* ContentView.swift */,
-				2E372216270B491D00C52AF9 /* Articles.json */,
-				2E372219270B4A7400C52AF9 /* ArticleModel.swift */,
 				2E22BD4C26E4C1E0003B29ED /* Assets.xcassets */,
 				2E22BD5126E4C1E0003B29ED /* LaunchScreen.storyboard */,
 				2E22BD5426E4C1E0003B29ED /* Info.plist */,
@@ -248,7 +242,6 @@
 				2E22BD5326E4C1E0003B29ED /* LaunchScreen.storyboard in Resources */,
 				2E22BD5026E4C1E0003B29ED /* Preview Assets.xcassets in Resources */,
 				2E22BD4D26E4C1E0003B29ED /* Assets.xcassets in Resources */,
-				2E372217270B491D00C52AF9 /* Articles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E22BD4726E4C1DD003B29ED /* AppDelegate.swift in Sources */,
-				2E37221A270B4A7500C52AF9 /* ArticleModel.swift in Sources */,
 				2E22BD4926E4C1DD003B29ED /* SceneDelegate.swift in Sources */,
 				2E22BD4B26E4C1DD003B29ED /* ContentView.swift in Sources */,
 			);
