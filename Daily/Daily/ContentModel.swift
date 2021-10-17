@@ -5,7 +5,10 @@
 //  Created by Gatuk Chattanon on 17/10/21.
 //
 
-struct ContentModel: Codable {
+import Foundation
+
+struct ContentModel: Codable, Identifiable {
+    let id = UUID()
     let title: String
     let author: String
     let url: String
