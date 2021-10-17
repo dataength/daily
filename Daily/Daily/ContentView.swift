@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var presenter: ContentPresenter
+
+    init() {
+        self.presenter = ContentPresenter()
+    }
+
     var body: some View {
         Text("Data Eng News")
             .font(.headline)
