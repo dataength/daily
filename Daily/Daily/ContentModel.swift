@@ -15,20 +15,11 @@ struct ContentModel: Codable, Identifiable {
     let datetime: String
     let summary: String
 
-    var formattedDateTime: String {
+    var formattedDate: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let date = dateFormatter.date(from: self.datetime)
-
-        let format = date?.getFormattedDate(format: "MMM d, yyyy") ?? ""
-        return format
-    }
-}
-
-extension Date {
-    func getFormattedDate(format: String) -> String {
-        let dateformat = DateFormatter()
-        dateformat.dateFormat = format
-        return dateformat.string(from: self)
+        
+        return date?.getFormattedDate(format: "MMM d, yyyy") ?? ""
     }
 }
