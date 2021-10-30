@@ -8,7 +8,7 @@
 import Foundation
 
 struct ContentModel: Codable, Identifiable {
-    let id = UUID()
+    var id = UUID()
     let title: String
     let author: String
     let url: String
