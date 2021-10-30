@@ -8,7 +8,8 @@
 import Foundation
 
 struct ContentModel: Codable, Identifiable {
-    let id = UUID()
+    // swiftlint:disable identifier_name
+    var id: UUID { UUID() }
     let title: String
     let author: String
     let url: String
