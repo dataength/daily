@@ -1,20 +1,13 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.0'
 
 target 'Daily' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for Daily
   pod 'SwiftLint'
 
   target 'DailyTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'DailyUITests' do
-    # Pods for testing
   end
-
 end
