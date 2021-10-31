@@ -20,7 +20,6 @@ struct ContentView: View {
         Text("Data Eng News")
             .font(.headline)
 
-
         List(self.contents) { content in
             VStack(alignment: .leading) {
                 Text(content.title).font(.title2).padding(.bottom, 2.0)
@@ -31,7 +30,7 @@ struct ContentView: View {
                 }
             }
             .padding([.top, .leading, .trailing], 8.0)
-        }.onAppear() {
+        }.onAppear {
             self.contents = presenter.loadContents() ?? [ContentModel]()
         }
     }

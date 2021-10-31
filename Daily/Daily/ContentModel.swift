@@ -8,7 +8,8 @@
 import Foundation
 
 struct ContentModel: Codable, Identifiable {
-    let id = UUID()
+    // swiftlint:disable identifier_name
+    var id: UUID { UUID() }
     let title: String
     let author: String
     let url: String
@@ -19,7 +20,6 @@ struct ContentModel: Codable, Identifiable {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let date = dateFormatter.date(from: self.datetime)
-        
         return date?.getFormattedDate(format: "MMM d, yyyy") ?? ""
     }
 }

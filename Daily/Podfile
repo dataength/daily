@@ -1,0 +1,13 @@
+platform :ios, '12.0'
+
+target 'Daily' do
+  use_frameworks!
+  pod 'SwiftLint'
+
+  target 'DailyTests' do
+    inherit! :search_paths
+  end
+
+  target 'DailyUITests' do
+  end
+end
