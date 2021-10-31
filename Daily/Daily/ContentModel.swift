@@ -20,7 +20,6 @@ struct ContentModel: Codable, Identifiable {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let date = dateFormatter.date(from: self.datetime)
-        
         return date?.getFormattedDate(format: "MMM d, yyyy") ?? ""
     }
 }
