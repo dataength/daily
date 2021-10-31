@@ -27,7 +27,7 @@ struct ContentView: View {
                 Text(content.summary).foregroundColor(.gray).padding(.bottom, 2.0)
                 HStack {
                     Text(content.author).foregroundColor(.gray)
-                    Text(content.datetime).foregroundColor(.gray)
+                    Text(content.formattedDate).foregroundColor(.gray)
                 }
             }
             .padding([.top, .leading, .trailing], 8.0)
