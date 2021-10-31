@@ -15,11 +15,10 @@
 		2E22BD5026E4C1E0003B29ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E22BD4F26E4C1E0003B29ED /* Preview Assets.xcassets */; };
 		2E22BD5326E4C1E0003B29ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E22BD5126E4C1E0003B29ED /* LaunchScreen.storyboard */; };
 		2E22BD5E26E4C1E1003B29ED /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22BD5D26E4C1E1003B29ED /* DateExtensionTests.swift */; };
-		2E22BD6926E4C1E1003B29ED /* DailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22BD6826E4C1E1003B29ED /* DailyUITests.swift */; };
-		2E22BD5E26E4C1E1003B29ED /* DailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22BD5D26E4C1E1003B29ED /* DailyTests.swift */; };
 		2E3DF02A271C356900021CEA /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E3DF029271C356900021CEA /* Contents.json */; };
 		2E3DF02C271C35AE00021CEA /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DF02B271C35AE00021CEA /* ContentModel.swift */; };
 		2E3DF02E271C36E600021CEA /* ContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DF02D271C36E600021CEA /* ContentPresenter.swift */; };
+		2E758EDF272E31CE00B234BE /* DailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E758EDE272E31CE00B234BE /* DailyUITests.swift */; };
 		2ED8E08B272D76CF00EBB303 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8E08A272D76CE00EBB303 /* DateExtension.swift */; };
 		819CBB72FEC7E4A4F4B8EB24 /* Pods_DailyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18451CE22F31A5C24369FDAC /* Pods_DailyTests.framework */; };
 		CD944995816935A7F848F2E6 /* Pods_Daily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D25B616E55C59954F57386 /* Pods_Daily.framework */; };
@@ -62,6 +61,7 @@
 		2E3DF029271C356900021CEA /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		2E3DF02B271C35AE00021CEA /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		2E3DF02D271C36E600021CEA /* ContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPresenter.swift; sourceTree = "<group>"; };
+		2E758EDE272E31CE00B234BE /* DailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyUITests.swift; sourceTree = "<group>"; };
 		2ED8E08A272D76CE00EBB303 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		87711C596778FE370E843052 /* Pods-Daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily.release.xcconfig"; path = "Target Support Files/Pods-Daily/Pods-Daily.release.xcconfig"; sourceTree = "<group>"; };
 		9A9515BE21424014C7395CC2 /* Pods_Daily_DailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daily_DailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +159,7 @@
 		2E22BD6726E4C1E1003B29ED /* DailyUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2E758EDE272E31CE00B234BE /* DailyUITests.swift */,
 				2E22BD6A26E4C1E1003B29ED /* Info.plist */,
 			);
 			path = DailyUITests;
@@ -265,6 +266,7 @@
 					};
 					2E22BD6326E4C1E1003B29ED = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 2E22BD4226E4C1DD003B29ED;
 					};
 				};
@@ -430,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E758EDF272E31CE00B234BE /* DailyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +670,7 @@
 			baseConfigurationReference = B992237B768C8CF4743A810A /* Pods-Daily-DailyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DailyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -676,6 +680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataength.DailyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Daily;
@@ -687,6 +692,7 @@
 			baseConfigurationReference = B6A2B6C693EB1AA43CE87AFA /* Pods-Daily-DailyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DailyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
